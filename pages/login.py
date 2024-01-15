@@ -40,6 +40,7 @@ class LoginHerokuAppPage:
         # alert = self.browser.switch_to_alert()
         alert.accept()
 
+    """
     def indian_page_method(self):
         prompt = self.browser.find_element(By.ID, 'prompt')
         prompt.click()
@@ -47,8 +48,5 @@ class LoginHerokuAppPage:
         # alert.send_keys('indian magic')
         alert.accept()
         sleep(10)
-        self.browser.execute_script("""
-            
-        """)
-
-
+        self.browser.execute_script("""""")
+    """
