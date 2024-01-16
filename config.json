@@ -1,4 +1,4 @@
 {
   "browser": "Chrome",
-  "implicit_wait": 5
+  "implicit_wait": 10
 }
