@@ -9,19 +9,16 @@ from time import sleep
 def test_successful_web_login(browser):
     login_page = LoginHerokuAppPage(browser)
 
-    USERNAME = "admin"
-    PASSWORD = "admin"
+    USERNAME = "tomsmith"
+    PASSWORD = "SuperSecretPassword!"
 
     # Given the login page loaded
     login_page.load()
 
     # When the user enter a valid username and password
-    # login_page.alertIsPresent()
-    sleep(5)
-    #login_page.enter_data(USERNAME, PASSWORD)
-    login_page.indian_page_method()
+    login_page.enter_data(USERNAME, PASSWORD)
 
-    # And the user click on the Login in button
-    #login_page.press_login_button()
+    # And click on the Login in button
+    login_page.click_login_button()
 
-    # Then a successfully login page is displayed
+    # Then a successful login page is displayed
