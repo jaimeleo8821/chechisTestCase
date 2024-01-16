@@ -9,6 +9,7 @@ from pages.result_login import ResultLoginHerokuAppPage
 from time import sleep
 
 
+# message = "\uf058" is a code for the content of the flash message
 @pytest.mark.parametrize('username,password,message', [('tomsmith', 'SuperSecretPassword!', '"\uf058"')])
 def test_successful_web_login(browser, username, password, message):
     login_page = LoginHerokuAppPage(browser)
