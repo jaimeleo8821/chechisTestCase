@@ -23,12 +23,14 @@ class LoginHerokuAppPage:
     def load(self):
         self.browser.get(self.URL)
 
+    # Enter de Login date
     def enter_data(self, username, password):
         input_username = self.browser.find_element(*self.INPUT_USERNAME)
         input_password = self.browser.find_element(*self.INPUT_PASSWORD)
         input_username.send_keys(username + Keys.TAB)
         input_password.send_keys(password)
 
+    # Making click on the 'Login' button
     def click_login_button(self):
         button = self.browser.find_element(*self.LOGIN_BUTTON)
         button.click()
